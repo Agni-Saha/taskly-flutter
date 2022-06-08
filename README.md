@@ -1,8 +1,8 @@
 ## Getting Started
 
-Clone this repo, run this to download packages -
+Clone this repo, run this to download packages - <br/>
     flutter pub get
-run this to actually run the project -
+run this to actually run the project - <br/>
     flutter run
     or Run from VSCode
 
