@@ -1,10 +1,10 @@
 ## Getting Started
 
 Clone this repo, run this to download packages - <br/>
-    flutter pub get
+    flutter pub get <br/>
 run this to actually run the project - <br/>
-    flutter run
-    or Run from VSCode
+    flutter run <br/>
+    or Run from VSCode <br/>
 
 ## Actual Logic
 
