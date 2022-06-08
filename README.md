@@ -1,35 +1,35 @@
 ## Getting Started
 
-Clone this repo, run this to download packages - <br/>
+1. Clone this repo, run this to download packages - <br/>
     flutter pub get <br/>
-run this to actually run the project - <br/>
+2. run this to actually run the project - <br/>
     flutter run <br/>
     or Run from VSCode <br/>
 
 ## Actual Logic
 
- As can be seen, the HomePageState class is a stateful widget inside the
+ 1. As can be seen, the HomePageState class is a stateful widget inside the
  createState() of the HomePage class.
 
- The main methods are - build(), taskList(), addTaskButton(), displayTaskPopup(),
+ 2. The main methods are - build(), taskList(), addTaskButton(), displayTaskPopup(),
  and taskView(), along with another class in another file task.dart.
  task.dart file has the Task class, whose work is to create a Map() using the 
  parameters provided in the constructor, and also a factory constructor is used
  so that the map can be returned.
 
 
- build() method returns a Scaffold, that has three main properties - appBar, body
+ 3. build() method returns a Scaffold, that has three main properties - appBar, body
  and floatingActionWidget. We created the appbar within it, body property returns
  a SafeArea containing taskView() and floatingActionWidget property contains the
  addTaskButton() method.
 
 
- So firstly the addTaskButton(). This method returns a FloatingActionButton widget
+ 4. So firstly the addTaskButton(). This method returns a FloatingActionButton widget
  which contains two properties - onPressed that has displayTaskPopup(), and child,
  containing the icon widget.
 
 
- As for the displayTaskPopup(), in there we are showing the AlertBox() widget 
+ 5. As for the displayTaskPopup(), in there we are showing the AlertBox() widget 
  from the showDialog() widget. showDialog() actually just implements the overlying 
  properties of an alertbox, like the exit animation on clicking outside the box, 
  dark overlay, etc.
@@ -46,7 +46,7 @@ run this to actually run the project - <br/>
  and then add those inside the box, and finally update the state.
 
 
- Now comes the taskView() method, that's been returned inside the body of Scaffold.
+ 6. Now comes the taskView() method, that's been returned inside the body of Scaffold.
  What we're doing here is that we are opening a box of Hive where we want to store
  our values. The thing is that this method actually returns a Future, and therefore
  the compiler will shift it to a different thread and then continue on with its
@@ -63,7 +63,7 @@ run this to actually run the project - <br/>
  the loading indicator.
 
 
- taksList() method actually renders the main content on the screen. It firstly 
+ 7. taksList() method actually renders the main content on the screen. It firstly 
  initializes the task variable with the contents of box from Hive. Then it uses
  the ListView.Builder() method to display all the things within that task variable.
             ListView() widget is used to render a scrollable list of items. The
